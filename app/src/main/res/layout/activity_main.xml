@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mark1.novem.appebook.MainActivity"
+    android:background="@drawable/bg">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="90dp"
+      android:orientation="horizontal"
+      android:id="@+id/head"
+      >
+<ImageView
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/logoanploen"/>
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="240dp"
+    android:background="@drawable/toolbar"/>
+
+  </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEW UPDATE"
+        android:textSize="20dp"
+        android:textColor="#2c675d"
+        android:layout_below="@+id/head"
+       android:layout_marginLeft="-40dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="10dp"
+        android:id="@+id/head2"
+        android:background="@drawable/headnewupdate"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      android:id="@+id/Showdetailbook"
+      android:layout_below="@+id/head2"
+      android:padding="10dp"
+      android:orientation="horizontal">
+
+    <ImageView
+      android:layout_width="135dp"
+      android:layout_height="170dp"
+      android:background="@drawable/exb"
+      android:layout_marginLeft="30dp"
+      android:layout_marginTop="10dp"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate :"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="97%"
+        android:textColor="#f20000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+
+    </TableRow>
+
+      <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View :"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2,568"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+      </TableRow>
+
+      <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update :"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20/11/2016"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+
+      </TableRow>
+      <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title :"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To love again"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+
+      </TableRow>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:padding="5dp"
+          android:text="CLICK"
+          android:textSize="20dp"
+          android:textColor="#ffffff"
+          android:background="@drawable/shape"/>
+
+    </TableLayout>
+
+
+
+  </LinearLayout>
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:layout_below="@+id/Showdetailbook"
+      android:background="#50000000"
+      android:orientation="horizontal">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="New"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/buttonfeed"/>
+    <View
+        android:layout_width="40dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="22.5dp"
+        android:rotation="90"
+        android:background="@drawable/line" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="Popular"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/buttonfeed"/>
+    <View
+        android:layout_width="40dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="22.5dp"
+        android:rotation="90"
+        android:background="@drawable/line"
+        android:id="@+id/line3"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="Top"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/buttonfeed"/>
+
+
+  </LinearLayout>
+
+
+
+</RelativeLayout>
